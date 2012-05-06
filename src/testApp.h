@@ -3,6 +3,12 @@
 #include "ofMain.h"
 #include "ofxKinect.h"
 #include "MeshMaker.h"
+#include "ofxOsc.h"
+
+//OSC
+#define PORT 12345
+#define NUM_MSG_STRINGS 20
+
 
 //#include "ofxGrabCam.h"
 
@@ -15,6 +21,7 @@ class testApp : public ofBaseApp{
 		void draw();
         void drawReport();
 		//-----------------------
+        void updateOsc();
 		void keyPressed  (int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -26,8 +33,15 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		//-----------------------
 		ofxKinect kinect;
-
-    
 		ofEasyCam easyCam;
         MeshMaker* myMesh;
+    
+        //-------OSC stuff----------------
+
+        ofxOscReceiver	receiver;
+        int				current_msg_string;
+        string          msg_strings[NUM_MSG_STRINGS];
+        float			timers[NUM_MSG_STRINGS];
+        int             razorYaw, razorPitch, razorRoll;
+
 };

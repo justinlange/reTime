@@ -65,6 +65,13 @@ int defaultVar = 0;
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    
+    //set up OSC
+    
+    receiver.setup( PORT );
+
+    
+    
     ofSetVerticalSync(true);
 	glEnable(GL_DEPTH_TEST);
     // enable depth->rgb image calibration
@@ -89,14 +96,12 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
   
+    updateOsc();
 
-    kinect.update();
-    
-    
-    if (kinect.isFrameNew()) {
-
-        myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
-        }
+//    kinect.update();
+//    if (kinect.isFrameNew()) {
+//        myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
+//        }
     
     
 }
@@ -115,79 +120,24 @@ void testApp::draw(){
     
      
 ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
-//    ofPushMatrix();    
-    
-//    printf("eye distance (r & f) %d\n", eyeDistance);
-    
-//    drawReport();
-    
-    
-//    ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2); 
-//    ofPushMatrix();    
-//    ofTranslate(fullWindowWidth/2,fullWindowHeight/2, -PZ); //centers everything
-    
-    //we basidrawcally need a container for the translation -- translate to the head origin point and then inside, perform the perspective translations 
-    
-//    int translateZ = mouseX;
-//    
-//    ofTranslate(0,0,smoothPZ);
-//    ofRotateY(smoothDiffX/3*PI);
-//    ofRotateX(smoothDiffY/3*PI);
-//    ofTranslate(0,0,-smoothPZ); //translates back to the default
-    
-//        if (kinect.isFrameNew()) {}
-    
-    
-    
-//    easyCam.begin();
-    
-    
-ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-    myMesh->updateMesh(smoothPZ, smoothDiffX, smoothDiffY, transZ);
 
-ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-    myMesh->updateMesh(smoothPZ, smoothDiffX+eyeDistance, smoothDiffY, transZ);
     
     
-//    ofPopMatrix();
-//    easyCam.end();
-       
     
-//    ofPopMatrix();
+    
+    
+//ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
+//    myMesh->updateMesh(smoothPZ, smoothDiffX, smoothDiffY, transZ);
+//
+//ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2);  
+//    myMesh->updateMesh(smoothPZ, smoothDiffX+eyeDistance, smoothDiffY, transZ);
+    
+  
 
 
-//    
+   
 ////    ofScale(1,1,sqrt(float(ofGetWindowWidth()/2)/mouseX));
-//    
-
-
     
-//    if (bDrawCloud) {
-////        drawPointCloud();
-//    }
-
-
-
-    
- /*
-  
-  
-    ofPushMatrix();
-    ofTranslate(fullWindowWidth/2,fullWindowHeight/2, -PZ); //centers everything
-    ofTranslate(0,0,smoothPZ);
-    ofRotateY(smoothDiffX-eyeDistance/3*PI);
-    ofRotateX(smoothDiffY/3*PI);
-    
-    ofTranslate(0,0,-smoothPZ); //translates back to the default
-*/    
-//    if (bDrawCloud) {
-//        drawPointCloud();
-//        drawPoses();
-//    }
-
-//    easyCam.end();
-    
-//    ofPopMatrix();
 
 
     
@@ -227,9 +177,34 @@ void testApp::keyPressed(int key){
 
     }
 
-    myMesh->timeControl();
+//    myMesh->timeControl();
 
 
+}
+
+//--------------------------------------------------------------
+void testApp::updateOsc(){
+    
+    // hide old messages
+	for ( int i=0; i<NUM_MSG_STRINGS; i++ )
+	{
+		if ( timers[i] < ofGetElapsedTimef() )
+			msg_strings[i] = "";
+	}
+    
+	// check for waiting messages
+	while( receiver.hasWaitingMessages() )
+	{
+		// get the next message
+		ofxOscMessage m;
+		receiver.getNextMessage( &m );
+        razorYaw = m.getArgAsInt32( 0 );
+        razorPitch = m.getArgAsInt32( 1 );
+        razorRoll = m.getArgAsInt32( 2 );
+	}
+    printf("razorYaw: %d razorPitch: %d razorRoll: %d\n", razorYaw, razorPitch, razorRoll);
+
+    
 }
 
 //--------------------------------------------------------------
