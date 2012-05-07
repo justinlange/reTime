@@ -30,18 +30,14 @@ int DY;
 int DZ;
 int diffX;
 int diffY;
-int eyeDistance = 10; //change later to 7.5
+int eyeDistance = 7; //change later to 7.5
 int transZ;
 
 
 ostringstream controlString;     
 string controlStringToShow;
 
-float smoothPZ = 460;
-
-float smoothDiffX;
-float smoothDiffY;
-float smoothTransZ;
+float smoothPZ = 650;
 
 float smoothValue = 0.05;
 float smoothVal = 0.05;
@@ -98,39 +94,36 @@ void testApp::update(){
   
     updateOsc();
 
-//    kinect.update();
-//    if (kinect.isFrameNew()) {
-//        myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
-//        }
+    kinect.update();
+    if (kinect.isFrameNew()) {
+        myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
+        }
     
     
 }
 
 //--------------------------------------------------------------
 void testApp::drawReport() {
-    ofPushMatrix();
     ostringstream controlString;     
-    controlString << "eye Distance (r & f) " << eyeDistance;    
+    controlString << "eye dis (r-f): " << eyeDistance << "smoothPZ (t-g" << smoothPZ;    
     controlStringToShow = controlString.str(); 
-    ofDrawBitmapString(ofToString(controlStringToShow), 50,50);
-    ofPopMatrix();
+    ofDrawBitmapString(ofToString(controlStringToShow), 10,10);
 }
 //--------------------------------------------------------------
 void testApp::draw(){
     
-     
+    ofBackground(0);
+    
+    drawReport(); 
 ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
 
     
     
-    
-    
-    
-//ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-//    myMesh->updateMesh(smoothPZ, smoothDiffX, smoothDiffY, transZ);
-//
-//ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-//    myMesh->updateMesh(smoothPZ, smoothDiffX+eyeDistance, smoothDiffY, transZ);
+ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
+    myMesh->updateMesh(smoothPZ, razorYaw, razorPitch, razorRoll);
+
+ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2); 
+    myMesh->updateMesh(smoothPZ, razorYaw+eyeDistance, razorPitch, razorRoll);
     
   
 
@@ -157,17 +150,9 @@ void testApp::keyPressed(int key){
             
 //        case 'z': rotateZvalue+=10; break;
             
-        case 't': smoothPZ+=10; break;
+        case 't': smoothPZ+=50; break;
            
-        case 'g': smoothPZ-=10; break;
-            
-        case 'r': smoothDiffX+=10; break;
-       
-        case 'f': smoothDiffX-=10; break;
-            
-        case 'y': smoothDiffY+=10; break;
-        
-        case 'h': smoothDiffY-=10; break;
+        case 'g': smoothPZ-=50; break;
             
         case 'u': transZ+=10; break;
             
@@ -177,7 +162,7 @@ void testApp::keyPressed(int key){
 
     }
 
-//    myMesh->timeControl();
+    myMesh->timeControl();
 
 
 }

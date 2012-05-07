@@ -54,42 +54,7 @@ ofVec3f getVertexFromImg(ofImage& pastImg, int x, int y) {
 
 
 MeshMaker::MeshMaker() {
-    
-    /*
-    //---------recording the present-----------
-    
-    int  numberOfFramesToRecord = 320;
-    bool recordingOn = false;
-    bool kinectDisplayEnabled = false;
-    int mostRecentFrame = 2;  //will make the first frame recorded "2"
-    ostringstream fileNameToSave;
-    string path = "/Volumes/untitled/"; 
-    int lastTime = 0;
-    int recordInterval = 30;
-    int currentTime = 0; 
-    int picX=0; //short for pixelIndexCounterX
-    int picY=0; //short for pixelIndexCounterY
-    int numberOfFramesRecorded = 0;
-    bool recordReady = false;
-    
-    //---------showing the present or past-----------
-    
-    int timeOffsetFrames = 0;
-    int frameToShow = 2;
-    int previousFrame = 0;
-    string frameResult;
-    ostringstream fileNameToLoad;
-    int skip;	
-    int width;
-    int height;
-    int startY = 0;
-    int startX = 0;
-    int endBufferY = 0;
-    int endBufferX = 0;
-     
-     */
-    
-    
+
     //---------recording the present-----------
     
     numberOfFramesToRecord = 320;
@@ -114,6 +79,7 @@ MeshMaker::MeshMaker() {
     startX = 0;
     endBufferY = 0;
     endBufferX = 0;
+    initialZtranslation = -500;
     
     
     presentImg.allocate(640, 480, OF_IMAGE_COLOR_ALPHA);
@@ -132,7 +98,7 @@ MeshMaker::MeshMaker() {
 
 
 
-void MeshMaker::updateMesh(int _smoothPZ, int _smoothDiffX, int _smoothDiffY, int _transZ) {
+void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll) {
     
     if (ofGetKeyPressed('p') || ofGetKeyPressed('o')){
         printf("we are viewing frame number: %d\n", timeOffsetFrames);
@@ -158,12 +124,16 @@ void MeshMaker::updateMesh(int _smoothPZ, int _smoothDiffX, int _smoothDiffY, in
 
     
     smoothPZ = _smoothPZ; 
-    smoothDiffX = _smoothDiffX;
-    smoothDiffY = _smoothDiffY;
-    transZ = _transZ;
+//    smoothDiffX = _smoothDiffX;
+//    smoothDiffY = _smoothDiffY;
+//    transZ = _transZ;
+    
+    razorYaw = _razorYaw;
+    razorPitch = _razorPitch;
+    razorRoll = _razorRoll;
     
     
-printf("smoothPZ: %d  smoothDiffX: %d  smoothDiffY: %d  transZL %d\n", smoothPZ, smoothDiffX, smoothDiffY, transZ);
+printf("smoothPZ: %d  razorYaw: %d  razorPitch: %d  razorRoll %d\n", smoothPZ, razorYaw, razorPitch, razorRoll);
     
     mesh.clear();
 
@@ -212,15 +182,20 @@ printf("smoothPZ: %d  smoothDiffX: %d  smoothDiffY: %d  transZL %d\n", smoothPZ,
         }
     }
     
-    ofPushMatrix();   
+    ofPushMatrix();
+
     
 //    ofScale(1, 1, 1); // "make y point down" I still don't understand what this means
     
-    ofTranslate(0,0, transZ); //centers everything
-    ofTranslate(0,0,smoothPZ);
-    ofRotateY(smoothDiffX/3*PI);
-    ofRotateX(smoothDiffY/3*PI);
-    ofTranslate(0,0,-smoothPZ); //translates back to the default
+    ofTranslate(0,0, initialZtranslation); //centers everything
+    ofTranslate(0,0,-smoothPZ);
+//    ofRotateY(smoothDiffX/3*PI);
+//    ofRotateX(smoothDiffY/3*PI);
+    ofRotateY(razorYaw);
+    ofRotateX(-razorPitch);
+    ofTranslate(0,0,smoothPZ); //translates back to the default
+    ofRotateZ(razorRoll);
+
     pastImg.bind();
     mesh.draw();  //
     pastImg.unbind();
