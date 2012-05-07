@@ -98,7 +98,7 @@ MeshMaker::MeshMaker() {
 
 
 
-void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll) {
+void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int wiiY) {
     
     if (ofGetKeyPressed('p') || ofGetKeyPressed('o')){
         printf("we are viewing frame number: %d\n", timeOffsetFrames);
@@ -188,12 +188,14 @@ printf("smoothPZ: %d  razorYaw: %d  razorPitch: %d  razorRoll %d\n", smoothPZ, r
 //    ofScale(1, 1, 1); // "make y point down" I still don't understand what this means
     
     ofTranslate(0,0, initialZtranslation); //centers everything
-    ofTranslate(0,0,-smoothPZ);
+    ofTranslate(0,0,-wiiY);
+    ofTranslate(wiiX,0,0);
+
 //    ofRotateY(smoothDiffX/3*PI);
 //    ofRotateX(smoothDiffY/3*PI);
     ofRotateY(razorYaw);
     ofRotateX(-razorPitch);
-    ofTranslate(0,0,smoothPZ); //translates back to the default
+//    ofTranslate(0,0,smoothPZ); //translates back to the default
     ofRotateZ(razorRoll);
 
     pastImg.bind();
@@ -225,7 +227,7 @@ void MeshMaker::timeControl(){
     //---------showing the present or past-----------
     
         timeOffsetFrames = 0;
-        frameToShow = 2;
+        frameToShow = 1;
         previousFrame = 0;
     
   } 

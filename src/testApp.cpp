@@ -65,6 +65,14 @@ void testApp::setup(){
     //set up OSC
     
     receiver.setup( PORT );
+    receiver2.setup( PORT2 );
+    
+    razorPitch = 0;
+    razorYaw = 0;
+    razorRoll = 0;
+    wiiX = 0;
+    wiiY = 0;
+
 
     
     
@@ -93,6 +101,7 @@ void testApp::setup(){
 void testApp::update(){
   
     updateOsc();
+    updateOsc2();
 
     kinect.update();
     if (kinect.isFrameNew()) {
@@ -104,8 +113,8 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::drawReport() {
-    ostringstream controlString;     
-    controlString << "eye dis (r-f): " << eyeDistance << "smoothPZ (t-g" << smoothPZ;    
+    ostringstream controlString;
+    controlString << "razorPitch(q-a) " << razorPitch << "razorYaw (w-s) " << razorYaw << "razorRoll(e-d) "<< razorRoll << "\n" << "wiiX(r-f) " << wiiX << "wiiY(t-g) ";    
     controlStringToShow = controlString.str(); 
     ofDrawBitmapString(ofToString(controlStringToShow), 10,10);
 }
@@ -120,10 +129,10 @@ ofTranslate(fullWindowWidth/2,fullWindowHeight/2);
     
     
 ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-    myMesh->updateMesh(smoothPZ, razorYaw, razorPitch, razorRoll);
+    myMesh->updateMesh(smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY);
 
 ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2); 
-    myMesh->updateMesh(smoothPZ, razorYaw+eyeDistance, razorPitch, razorRoll);
+    myMesh->updateMesh(smoothPZ, razorYaw+eyeDistance, razorPitch, razorRoll, wiiX, wiiY);
     
   
 
@@ -142,21 +151,23 @@ void testApp::keyPressed(int key){
     switch (key) {
 		case OF_KEY_UP: kTilt += 1; if (kTilt > 30) kTilt = 30; kinect.setCameraTiltAngle(kTilt); break;
         case OF_KEY_DOWN: kTilt -= 1; if (kTilt < -30) kTilt = -30; kinect.setCameraTiltAngle(kTilt); break;
+        
+            
+        case 'q': razorPitch+=5; break;
+        case 'a': razorPitch-=5; break;
+        case 'w': razorYaw+=5; break;
+        case 's': razorYaw-=5; break;
+        case 'e': razorRoll+=5; break;
+        case 'd': razorRoll-=5; break;
+        case 'r': wiiX+=50; break;
+        case 'f': wiiX-=50; break;
+        case 't': wiiY+=50; break;
+        case 'g': wiiY-=50; break;
+        case 'y': smoothPZ+=50; break;
+        case 'h': smoothPZ-=50; break;
+        case 'u': smoothPZ+=50; break;
+        case 'j': smoothPZ-=50; break;
 
-                        
-//        case 'x': rotateXvalue+=10; break;
-            
-//        case 'y': rotateYvalue+=10; break;
-            
-//        case 'z': rotateZvalue+=10; break;
-            
-        case 't': smoothPZ+=50; break;
-           
-        case 'g': smoothPZ-=50; break;
-            
-        case 'u': transZ+=10; break;
-            
-        case 'j': transZ-=10; break;
 
 
 
@@ -191,6 +202,49 @@ void testApp::updateOsc(){
 
     
 }
+
+//--------------------------------------------------------------
+void testApp::updateOsc2(){
+    
+    
+    
+	// check for waiting messages
+	while( receiver2.hasWaitingMessages() )
+	{
+		// get the next message
+		ofxOscMessage b;
+		receiver2.getNextMessage( &b );
+        
+		// check for mouse moved message
+		if ( b.getAddress() == "/wii/1/ir/0" )
+		{
+			// both the arguments are int32's
+			fWiiX = b.getArgAsFloat( 0 );
+//            printf("the address is good for 0\n");
+		}
+		// check for mouse button message
+        else if ( b.getAddress() == "/wii/1/ir/1" )
+		{
+			// the single argument is a string
+			fWiiY = b.getArgAsFloat( 0 ) ;
+//            printf("the address is good for 1\n");
+
+		}
+	}
+    
+    wiiX = ofMap(fWiiX, 0, 1, -1000, 1000);
+    wiiY = ofMap(fWiiY, 0, 1, -1000, 1000);
+
+    
+    
+    
+    printf("wiX: %d wiiY: %d\n", wiiX, wiiY);
+
+}
+
+    
+    
+
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){

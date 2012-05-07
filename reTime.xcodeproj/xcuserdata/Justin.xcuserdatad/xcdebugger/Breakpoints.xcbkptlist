@@ -14,7 +14,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "129"
          endingLineNumber = "129"
-         landmarkName = "MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll)"
+         landmarkName = "MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int wiiY)"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -7,6 +7,7 @@
 
 //OSC
 #define PORT 12345
+#define PORT2 9000
 #define NUM_MSG_STRINGS 20
 
 
@@ -22,6 +23,7 @@ class testApp : public ofBaseApp{
         void drawReport();
 		//-----------------------
         void updateOsc();
+        void updateOsc2();
 		void keyPressed  (int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -39,9 +41,13 @@ class testApp : public ofBaseApp{
         //-------OSC stuff----------------
 
         ofxOscReceiver	receiver;
+        ofxOscReceiver	receiver2;
+
         int				current_msg_string;
         string          msg_strings[NUM_MSG_STRINGS];
         float			timers[NUM_MSG_STRINGS];
         int             razorYaw, razorPitch, razorRoll;
+        float           fWiiX, fWiiY;
+        int             wiiX, wiiY;
 
 };

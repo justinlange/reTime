@@ -12,7 +12,7 @@ public:
     MeshMaker();
     
     void recordTime( ofxKinect* kinect );
-    void updateMesh( int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll );
+    void updateMesh( int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int _wiiY );
     void setupMesh();
     void exit();
     void timeControl();
@@ -31,6 +31,9 @@ public:
     int razorYaw;
     int razorPitch;
     int razorRoll;
+    int wiiX;
+    int wiiY;
+    
 //    int smoothDiffX;
 //    int smoothDiffY;
 //    int transZ;
