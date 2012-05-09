@@ -10,7 +10,10 @@ using namespace std;
 // for the average fps calculation
 #define FPS_MEAN 30
 
+
+
 int kTilt = 0;
+
 
 
 int frameCount = 0;
@@ -62,6 +65,8 @@ int defaultVar = 0;
 //--------------------------------------------------------------
 void testApp::setup(){
     
+    
+    
     //set up OSC
     
     receiver.setup( PORT );
@@ -72,6 +77,7 @@ void testApp::setup(){
     razorRoll = 0;
     wiiX = 0;
     wiiY = 0;
+    wiiZ = 0;
 
 
     
@@ -100,21 +106,21 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
   
-    updateOsc();
-    updateOsc2();
-
-    kinect.update();
-    if (kinect.isFrameNew()) {
-        myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
-        }
+//    updateOsc();
+//    updateOsc2();
     
+        kinect.update();
+        if (kinect.isFrameNew()) {
+            myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
+            }
+        
     
 }
 
 //--------------------------------------------------------------
 void testApp::drawReport() {
     ostringstream controlString;
-    controlString << "razorPitch(q-a) " << razorPitch << "razorYaw (w-s) " << razorYaw << "razorRoll(e-d) "<< razorRoll << "\n" << "wiiX(r-f) " << wiiX << "wiiY(t-g) ";    
+    controlString << "razorPitch(q-a) " << razorPitch << "razorYaw (w-s) " << razorYaw << "razorRoll(e-d) "<< razorRoll << "\n" << "wiiX(r-f) " << wiiX << "wiiY(t-g)" << wiiY;    
     controlStringToShow = controlString.str(); 
     ofDrawBitmapString(ofToString(controlStringToShow), 10,10);
 }
@@ -126,13 +132,16 @@ void testApp::draw(){
     drawReport(); 
 ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
 
+//ofViewport(0, ofGetWindowHeight(), ofGetWindowWidth(), ofGetWindowHeight());  
+    myMesh->updateMesh(frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);
     
     
-ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-    myMesh->updateMesh(smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY);
-
-ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2); 
-    myMesh->updateMesh(smoothPZ, razorYaw+eyeDistance, razorPitch, razorRoll, wiiX, wiiY);
+    
+//ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
+//    myMesh->updateMesh(frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);
+//
+//ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2); 
+//    myMesh->updateMesh(frameCounter, smoothPZ, razorYaw+eyeDistance, razorPitch, razorRoll, wiiX, wiiY, wiiZ);
     
   
 
@@ -148,33 +157,42 @@ ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2);
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
     
+    myMesh->timeControl();
+
+    
     switch (key) {
 		case OF_KEY_UP: kTilt += 1; if (kTilt > 30) kTilt = 30; kinect.setCameraTiltAngle(kTilt); break;
         case OF_KEY_DOWN: kTilt -= 1; if (kTilt < -30) kTilt = -30; kinect.setCameraTiltAngle(kTilt); break;
         
             
-        case 'q': razorPitch+=5; break;
-        case 'a': razorPitch-=5; break;
-        case 'w': razorYaw+=5; break;
-        case 's': razorYaw-=5; break;
+        case 'w': razorPitch+=5; break;
+        case 's': razorPitch-=5; break;
+        case 'q': razorYaw+=5; break;
+        case 'a': razorYaw-=5; break;
         case 'e': razorRoll+=5; break;
         case 'd': razorRoll-=5; break;
         case 'r': wiiX+=50; break;
         case 'f': wiiX-=50; break;
         case 't': wiiY+=50; break;
         case 'g': wiiY-=50; break;
-        case 'y': smoothPZ+=50; break;
-        case 'h': smoothPZ-=50; break;
+        case 'y': wiiZ+=50; break;
+        case 'h': wiiZ-=50; break;    
+        case '1': if(fWiiX<1) fWiiX+=.01; break;
+        case '2': if(fWiiX>0) fWiiX-=.01; break;
+        case '3': if(fWiiY<1) fWiiY+=.01; break;
+        case '4': if(fWiiY>0) fWiiY-=.01; break;
+        case '5': if(fWiiZ<1) fWiiZ+=.01; break;
+        case '6': if(fWiiZ>0) fWiiZ-=.01; break;
         case 'u': smoothPZ+=50; break;
         case 'j': smoothPZ-=50; break;
+        case 'o': frameCounter++; break;
+        case 'l': frameCounter = 0; break;
 
 
 
 
     }
-
-    myMesh->timeControl();
-
+    
 
 }
 
@@ -198,7 +216,7 @@ void testApp::updateOsc(){
         razorPitch = m.getArgAsInt32( 1 );
         razorRoll = m.getArgAsInt32( 2 );
 	}
-    printf("razorYaw: %d razorPitch: %d razorRoll: %d\n", razorYaw, razorPitch, razorRoll);
+    printf("razorYaw: %d razorPitch: %d razorRoll: %d wiiX: %d wiiY: %d wiiZ: %d\n", razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ);
 
     
 }
@@ -232,18 +250,16 @@ void testApp::updateOsc2(){
 		}
 	}
     
-    wiiX = ofMap(fWiiX, 0, 1, -1000, 1000);
-    wiiY = ofMap(fWiiY, 0, 1, -1000, 1000);
+//    wiiX = ofMap(fWiiX, 0, 1, -1000, 1000);
+//    wiiY = ofMap(fWiiY, 0, 1, -1000, 1000);
 
     
     
     
-    printf("wiX: %d wiiY: %d\n", wiiX, wiiY);
 
 }
 
-    
-    
+
 
 
 //--------------------------------------------------------------

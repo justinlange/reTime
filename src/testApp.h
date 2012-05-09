@@ -24,6 +24,7 @@ class testApp : public ofBaseApp{
 		//-----------------------
         void updateOsc();
         void updateOsc2();
+        bool setTravelMode(bool);
 		void keyPressed  (int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -46,8 +47,11 @@ class testApp : public ofBaseApp{
         int				current_msg_string;
         string          msg_strings[NUM_MSG_STRINGS];
         float			timers[NUM_MSG_STRINGS];
+    
+        //-------HeadTracking ------
         int             razorYaw, razorPitch, razorRoll;
-        float           fWiiX, fWiiY;
-        int             wiiX, wiiY;
+        float           fWiiX, fWiiY, fWiiZ;
+        int             wiiX, wiiY, wiiZ;
+        int             frameCounter;
 
 };

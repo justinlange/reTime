@@ -12,6 +12,7 @@
 #include <string>
 #include <sstream>
 #include <iostream> 
+#define RECORDTIMEFRAMES 0
  
 
 using namespace std; 
@@ -54,9 +55,10 @@ ofVec3f getVertexFromImg(ofImage& pastImg, int x, int y) {
 
 
 MeshMaker::MeshMaker() {
-
-    //---------recording the present-----------
     
+        
+    //---------recording the present-----------
+        
     numberOfFramesToRecord = 320;
     recordingOn = false;
     kinectDisplayEnabled = false;
@@ -92,15 +94,19 @@ MeshMaker::MeshMaker() {
 	height = pastImg.getHeight();
 	ofVec3f zero(0, 0, 0);
     glEnable(GL_DEPTH_TEST);
+    cam.cacheMatrices(true);
+    cam.setNearClip(.01);
+    cam.setFarClip(1000);
+    cam.setFov(60);
 
     
 }
 
 
 
-void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int wiiY) {
+void MeshMaker::updateMesh(int _frameCounter, int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int _wiiY, int _wiiZ, float _fWiiX, float _fWiiY, float _fWiiZ) {
     
-    if (ofGetKeyPressed('p') || ofGetKeyPressed('o')){
+    if (ofGetKeyPressed('x') || ofGetKeyPressed('c')){
         printf("we are viewing frame number: %d\n", timeOffsetFrames);
         if(ofGetKeyPressed('p')){
             if(timeOffsetFrames < numberOfFramesRecorded-1){
@@ -109,7 +115,7 @@ void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _r
                 timeOffsetFrames++;
             }
         }
-        if(ofGetKeyPressed('o')){
+        if(ofGetKeyPressed('c')){
             if (timeOffsetFrames > 1){
                 timeOffsetFrames--;
             }else{
@@ -117,7 +123,7 @@ void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _r
             }
         }
         
-        if(ofGetKeyPressed('i')){
+        if(ofGetKeyPressed('v')){
             timeOffsetFrames = 0;
         }
     }    
@@ -131,16 +137,26 @@ void MeshMaker::updateMesh(int _smoothPZ, int _razorYaw, int _razorPitch, int _r
     razorYaw = _razorYaw;
     razorPitch = _razorPitch;
     razorRoll = _razorRoll;
+    frameCounter = _frameCounter;
+    wiiX = _wiiX;
+    wiiY = _wiiY;
+    wiiZ = _wiiZ;
+    fWiiX = _fWiiX;
+    fWiiY = _fWiiY;
+    fWiiZ = _fWiiZ;
     
     
-printf("smoothPZ: %d  razorYaw: %d  razorPitch: %d  razorRoll %d\n", smoothPZ, razorYaw, razorPitch, razorRoll);
+    
+//printf("smoothPZ: %d  razorYaw: %d  razorPitch: %d  razorRoll %d\n", smoothPZ, razorYaw, razorPitch, razorRoll);
     
     mesh.clear();
 
-         
+    if (RECORDTIMEFRAMES == 1){
+        frameToShow = numberOfFramesRecorded - 1;    
+    }else{
+        frameToShow = frameCounter;
+    }
     
-//    frameToShow = mostRecentFrame - timeOffsetFrames + 1;    
-    frameToShow = numberOfFramesRecorded - 1;     
     ostringstream fileNameToLoad;     
     fileNameToLoad << "/Volumes/Untitled/" << frameToShow << ".png";     
     frameResult = fileNameToLoad.str(); 
@@ -182,34 +198,86 @@ printf("smoothPZ: %d  razorYaw: %d  razorPitch: %d  razorRoll %d\n", smoothPZ, r
         }
     }
     
-    ofPushMatrix();
+//    ofPushMatrix();
 
     
 //    ofScale(1, 1, 1); // "make y point down" I still don't understand what this means
     
-    ofTranslate(0,0, initialZtranslation); //centers everything
-    ofTranslate(0,0,-wiiY);
-    ofTranslate(wiiX,0,0);
+//    ofTranslate(0,0, initialZtranslation); //centers everything
+    
+    
+//    ofTranslate(wiiX,0,0);
+//    ofRotateX(razorPitch);
+//    ofTranslate(-wiiX,0,0);
+//    ofTranslate(0,wiiY,0);
+//    ofRotateY(razorYaw);
+//    ofTranslate(0,-wiiY,0);
+//    ofTranslate(0,0,wiiZ);
+//    ofRotateZ(razorRoll);
+//    ofTranslate(0,0,-wiiZ);
+
+    
+    
+    
+    
+
+    
+    
+    
+    //create a vector from the Translates
+    //positionVector = ofVec3f(wiiX,wiiY,wiiZ);
+    //normalize this vector positionVector = positionVector.normalize;
+    
+    
+    
+    /*
+     create a vector from wiiX, wiiY, wiiZ (my position)
+     
+     */
+    
+    ofVec3f pVec = ofVec3f(fWiiX,fWiiY,fWiiZ);
+    pVec.normalize();
+    ofVec3f vVec = ofVec3f(razorYaw, razorPitch, razorRoll);
+//    ofPushMatrix();
+    
+//    ofTranslate(wiiX,wiiY,wiiZ);
+//
+//    ofRotate(razorYaw, wiiX,wiiY,wiiZ );
+//    ofRotate(razorPitch, wiiX,wiiY,wiiZ );
+//    ofRotate(razorRoll, pVec.z, pVec.x, pVec.y );
+
+
+    
+
+
 
 //    ofRotateY(smoothDiffX/3*PI);
 //    ofRotateX(smoothDiffY/3*PI);
-    ofRotateY(razorYaw);
-    ofRotateX(-razorPitch);
+   
 //    ofTranslate(0,0,smoothPZ); //translates back to the default
-    ofRotateZ(razorRoll);
 
+    
+//    cam.begin();
+//    ofCamera::worldToScreen(ofVec3f(wiiX,wiiY,wiiZ), ofRectangle(0,0,500,500));
+
+    cam.begin();
+    ofRectangle viewport = ofRectangle(0, 0, 1024,768);
+    cam.screenToWorld(vVec, viewport);
+//    cam.worldToScreen(pVec, viewport);
     pastImg.bind();
     mesh.draw();  //
     pastImg.unbind();
+    
+    cam.end();
    
-    ofPopMatrix();
+//    ofPopMatrix();
     
 }  
         
 
 void MeshMaker::timeControl(){
 
-    if(ofGetKeyPressed('q')) {
+    if(ofGetKeyPressed('z')) {
         
         printf("we are resetting the variables");
         string path = "/volumes/Untitled/"; 
@@ -229,6 +297,7 @@ void MeshMaker::timeControl(){
         timeOffsetFrames = 0;
         frameToShow = 1;
         previousFrame = 0;
+        frameCounter = 0;
     
   } 
 }

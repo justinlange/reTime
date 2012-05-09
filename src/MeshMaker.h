@@ -4,6 +4,9 @@
 #include "ofxKinect.h"
 //#include "time.h"
 
+//1 for recording new frames, 0 for not 
+#define RECORDTIMEFRAMES 0
+
     
 class MeshMaker {    
         
@@ -12,7 +15,7 @@ public:
     MeshMaker();
     
     void recordTime( ofxKinect* kinect );
-    void updateMesh( int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int _wiiY );
+    void updateMesh( int _frameCounter, int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int _wiiY, int _wiiZ, float _fWiiX, float _fWiiY, float _fWiiZ );
     void setupMesh();
     void exit();
     void timeControl();
@@ -23,6 +26,7 @@ public:
     ofImage presentImg;
     ofImage pastImg;
     ofMesh mesh;
+    ofCamera cam;
     
     //---------variables to pass in to control the mesh---
     
@@ -33,6 +37,9 @@ public:
     int razorRoll;
     int wiiX;
     int wiiY;
+    int wiiZ;
+    
+    float fWiiX, fWiiY, fWiiZ;
     
 //    int smoothDiffX;
 //    int smoothDiffY;
@@ -54,6 +61,7 @@ public:
     
     //---------showing the present or past-----------
     
+    int frameCounter;    
     int timeOffsetFrames;
     int frameToShow;
     int previousFrame;
