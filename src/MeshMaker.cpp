@@ -129,21 +129,21 @@ void MeshMaker::updateMesh(int _frameCounter, int _smoothPZ, int _razorYaw, int 
     }    
 
     
-    smoothPZ = _smoothPZ; 
+//    smoothPZ = _smoothPZ; 
 //    smoothDiffX = _smoothDiffX;
 //    smoothDiffY = _smoothDiffY;
 //    transZ = _transZ;
     
-    razorYaw = _razorYaw;
-    razorPitch = _razorPitch;
-    razorRoll = _razorRoll;
+//    razorYaw = _razorYaw;
+//    razorPitch = _razorPitch;
+//    razorRoll = _razorRoll;
     frameCounter = _frameCounter;
-    wiiX = _wiiX;
-    wiiY = _wiiY;
-    wiiZ = _wiiZ;
-    fWiiX = _fWiiX;
-    fWiiY = _fWiiY;
-    fWiiZ = _fWiiZ;
+//    wiiX = _wiiX;
+//    wiiY = _wiiY;
+//    wiiZ = _wiiZ;
+//    fWiiX = _fWiiX;
+//    fWiiY = _fWiiY;
+//    fWiiZ = _fWiiZ;
     
     
     
