@@ -25,8 +25,9 @@ public:
 //    ofxKinect *kinect;
     ofImage presentImg;
     ofImage pastImg;
-    ofMesh mesh;
-    ofCamera cam;
+    ofMesh mesh;  
+
+
     
     //---------variables to pass in to control the mesh---
     

@@ -5,11 +5,10 @@ cCheck dependencies
 cProcessInfoPlistFile "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/Info.plist" openFrameworks-Info.plist
 cProcessPCH++ /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42
 cProcessPCH /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c" normal i386 c com.apple.compilers.llvmgcc42
 cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c" normal i386 c com.apple.compilers.llvmgcc42
 cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c" normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-82227D70F1DD098B.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 
 N/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin10/4.2.1/include/emmintrin.h
 c000000004E308E2E000000000000EAA5
@@ -417,7 +416,11 @@ N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine
 t2
 s0
 
-N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/main.o
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-82227D70F1DD098B.o
+t2
+s0
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-FF26E1E8FC87E188.o
 t2
 s0
 
@@ -449,20 +452,44 @@ N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine
 t2
 s0
 
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxGameCamera.o
+t2
+s0
+
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxKinect.o
 t2
 s0
 
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscBundle.o
+t2
+s0
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscMessage.o
+t2
+s0
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscReceiver.o
+t2
+s0
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscSender.o
+t2
+s0
+
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/reTimeDebug.LinkFileList
-c000000004F9607D600000000000009FF
-t1335232470
-s2559
+c000000004FAB046A0000000000000EA1
+t1336607850
+s3745
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o
 t2
 s0
 
-N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp.o
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-77A841132DFFF189.o
+t2
+s0
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o
 t2
 s0
 
@@ -475,14 +502,228 @@ t2
 s0
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
-c000000004F9607D60000000000000114
-t1335232470
+c000000004FAB046A0000000000000114
+t1336607850
 s276
 
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/main.o
+c000000004F6C736C000000000001C640
+t1332507500
+s116288
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/ofxGameCamera.o
+c000000004F6C736E00000000000245D8
+t1332507502
+s148952
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/ofxXmlSettings.o
+c000000004F6C7370000000000003485C
+t1332507504
+s215132
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/testApp.o
+c000000004F6C736C000000000001F188
+t1332507500
+s127368
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/tinyxml.o
+c000000004F6C736E0000000000035344
+t1332507502
+s217924
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/tinyxmlerror.o
+c000000004F6C736E000000000000BCF0
+t1332507502
+s48368
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/build/GameCameraExample.build/Debug/GameCameraExample.build/Objects-normal/i386/tinyxmlparser.o
+c000000004F6C736F00000000000221AC
+t1332507503
+s139692
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/main.cpp
+c000000004F47A826000000000000019E
+t1330096166
+s414
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/testApp.cpp
+c000000004F47A82600000000000006A4
+t1330096166
+s1700
+i"testApp.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/testApp.h
+c000000004F47A82600000000000001F5
+t1330096166
+s501
+i"ofMain.h"
+i"ofxGameCamera.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.cpp
+c000000004F47A826000000000000147A
+t1330096166
+s5242
+i"ofxGameCamera.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h
+c000000004F47A8260000000000000373
+t1330096166
+s883
+i"ofMain.h"
+i"ofxXmlSettings.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/ip/IpEndpointName.h
+c000000004AFA94440000000000000AF5
+t1257935940
+s2805
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/ip/NetworkingUtils.h
+c000000004AFA944400000000000007AA
+t1257935940
+s1962
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/ip/PacketListener.h
+c000000004AFA944400000000000006AD
+t1257935940
+s1709
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/ip/UdpSocket.h
+c000000004AFA9444000000000000151A
+t1257935940
+s5402
+i"NetworkingUtils.h"
+i"IpEndpointName.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/osc/OscException.h
+c000000004AFA944400000000000007E0
+t1257935940
+s2016
+i<exception>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/osc/OscOutboundPacketStream.h
+c000000004AE1512200000000000013B2
+t1256280354
+s5042
+i"OscTypes.h"
+i"OscException.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/osc/OscPacketListener.h
+c000000004AFA94440000000000000A2C
+t1257935940
+s2604
+i"OscReceivedElements.h"
+i"../ip/PacketListener.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/osc/OscReceivedElements.h
+c000000004AFA94440000000000003301
+t1257935940
+s13057
+i"OscTypes.h"
+i"OscException.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/include/osc/OscTypes.h
+c000000004E1C48040000000000001112
+t1310476292
+s4370
+i<TargetConditionals.h>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/libs/oscpack/lib/osx/osc.a
+c000000004AE15122000000000004BDD8
+t1256280354
+s310744
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOsc.h
+c000000004AE302AE0000000000000650
+t1256391342
+s1616
+i"ofxOscArg.h"
+i"ofxOscMessage.h"
+i"ofxOscSender.h"
+i"ofxOscReceiver.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscArg.h
+c000000004AFA94440000000000000D5D
+t1257935940
+s3421
+i"ofConstants.h"
+i<string>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscBundle.cpp
+c000000004D55801800000000000007F8
+t1297448984
+s2040
+i"ofxOscBundle.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscBundle.h
+c000000004AE302C400000000000009AE
+t1256391364
+s2478
+i<vector>
+i"ofxOscMessage.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscMessage.cpp
+c000000004D8461620000000000001634
+t1300521314
+s5684
+i"ofxOscMessage.h"
+i<iostream>
+i<assert.h>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscMessage.h
+c000000004AE302D40000000000000CC8
+t1256391380
+s3272
+i"ofxOscArg.h"
+i<vector>
+i<string>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscReceiver.cpp
+c000000004D55801800000000000017F2
+t1297448984
+s6130
+i"ofxOscReceiver.h"
+i<pthread.h>
+i<iostream>
+i<assert.h>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscReceiver.h
+c000000004AFA94440000000000000C8A
+t1257935940
+s3210
+i<deque>
+i"ofMain.h"
+i<windows.h>
+i<pthread.h>
+i"OscTypes.h"
+i"OscPacketListener.h"
+i"UdpSocket.h"
+i"ofxOscMessage.h"
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscSender.cpp
+c000000004AE302EC0000000000000DBE
+t1256391404
+s3518
+i"ofxOscSender.h"
+i"UdpSocket.h"
+i<assert.h>
+
+N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscSender.h
+c000000004AE302F0000000000000090B
+t1256391408
+s2315
+i<string>
+i"OscTypes.h"
+i"OscOutboundPacketStream.h"
+i"ofxOscBundle.h"
+i"ofxOscMessage.h"
+
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/MeshMaker.cpp
-c000000004F9603A90000000000002297
-t1335231401
-s8855
+c000000004FAB03360000000000002BE5
+t1336607542
+s11237
 i<iostream>
 i"MeshMaker.h"
 i"math.h"
@@ -491,34 +732,35 @@ i<sstream>
 i<iostream>
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/MeshMaker.h
-c000000004F9336C50000000000000517
-t1335047877
-s1303
+c000000004FAB036D0000000000000695
+t1336607597
+s1685
 i"ofxKinect.h"
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp
-c000000004F91DDCC000000000000019E
-t1334959564
-s414
+c000000004FA847AB000000000000019D
+t1336428459
+s413
 i"ofMain.h"
 i"testApp.h"
 i"ofAppGlutWindow.h"
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp
-c000000004F96078400000000000017F4
-t1335232388
-s6132
+c000000004FAAEF440000000000001B61
+t1336602436
+s7009
 i"testApp.h"
 i"MeshMaker.h"
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h
-c000000004F91F69A0000000000000405
-t1334965914
-s1029
+c000000004FAB03D60000000000000562
+t1336607702
+s1378
 i"ofMain.h"
 i"ofxKinect.h"
-i"ofxHeadPoseEstimator.h"
 i"MeshMaker.h"
+i"ofxOsc.h"
+i"ofxGameCamera.h"
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/addons/ofxKinect/libs/libfreenect/cameras.h
 c000000004F50FA960000000000000599
@@ -1774,8 +2016,8 @@ i"ofTexture.h"
 i"ofVideoPlayer.h"
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
-c000000004F9607D600000000016F50C0
-t1335232470
+c000000004FAB046A00000000016F50C0
+t1336607850
 s24072384
 
 N/Users/Justin/Documents/coding/of_preRelease_v007_osx/libs/poco/include/Poco/AbstractDelegate.h
@@ -2355,6 +2597,27 @@ r0
 CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp"
 r0
 
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/main.cpp"
+r0
+
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/testApp.cpp"
+r0
+
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.cpp"
+r0
+
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscBundle.cpp"
+r0
+
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscMessage.cpp"
+r0
+
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscReceiver.cpp"
+r0
+
+CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscSender.cpp"
+r0
+
 CBuild AST from "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/MeshMaker.cpp"
 r0
 
@@ -2366,14 +2629,14 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies71c634563f46b541^ea2136563f46b541^---0#1#0#--18"Check dependencies36"5391B6CE-7E00-4F23-9E62-DF54BF72F40F-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies0894e5ea3b5bb541^b807e9ea3b5bb541^---0#1#0#--18"Check dependencies36"7763A0A7-546D-48ED-8A9F-28492FE9FA40-
 
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/MeshMaker.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/MeshMaker.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 r0
 
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c" normal i386 c com.apple.compilers.llvmgcc42
-s356925275.541638
-e356925276.286687
+s358300654.217028
+e358300655.442364
 r1
 xCompileC
 xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o
@@ -2382,11 +2645,11 @@ xnormal
 xi386
 xc
 xcom.apple.compilers.llvmgcc42
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c37c68a5b3f46b541^1975495c3f46b541^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c0000000000000000^2540"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o ../../../addons/ofxKinect/libs/libfreenect/cameras.c normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o"36"D40C040D-E721-4C56-8585-8B7578F6DF1B-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.cc18c39ee3b5bb541^414971ef3b5bb541^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c0000000000000000^2540"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o ../../../addons/ofxKinect/libs/libfreenect/cameras.c normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/cameras.c" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/cameras.o"36"6FCA83CB-09B4-4878-84D3-06DF0A8C8D82-
 
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c" normal i386 c com.apple.compilers.llvmgcc42
-s356925276.288106
-e356925276.617125
+s358300655.342945
+e358300655.872287
 r1
 xCompileC
 xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o
@@ -2395,22 +2658,26 @@ xnormal
 xi386
 xc
 xcom.apple.compilers.llvmgcc42
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c93e4495c3f46b541^0e69a45c3f46b541^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c0000000000000000^2528"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o ../../../addons/ofxKinect/libs/libfreenect/core.c normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o"36"8447942E-C1EB-43C8-B1EC-B887CC7D9776-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c47e857ef3b5bb541^2f6cedef3b5bb541^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c0000000000000000^2528"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o ../../../addons/ofxKinect/libs/libfreenect/core.c normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/core.c" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/core.o"36"3770F266-A35E-4592-9A78-DA33B9AC8202-
 
-CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-s356925276.461459
-e356925279.324973
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-82227D70F1DD098B.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+s358300655.443608
+e358300667.040693
 r0
 xCompileC
-xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/main.o
+xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/main-82227D70F1DD098B.o
 x/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvmgcc42
-oIn file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp:2:
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:5:34: error: ofxHeadPoseEstimator.h: No such file or directory
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cppb249765c3f46b541^a530535f3f46b541^-291"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp:2:/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:5:34: error: ofxHeadPoseEstimator.h: No such file or directory1(21%IDEActivityLogMessage2@49"OfxHeadPoseEstimator.h: No such file or directory-356925277#126#165#2(36%IDEActivityLogHeaderInclusionMessage3@122"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp-356925277#18446744073709551615#0#-0#-23%DVTTextDocumentLocation4@118"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/main.cpp0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---2@154"OfxHeadPoseEstimator.h: No such file or directory in /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h-356925277#18446744073709551615#0#-0#-4@119"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---2#-4@119"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#28"*: No such file or directory--0#0#0#-19%DVTDocumentLocation5@118"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/main.cpp0000000000000000^2508"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main.o src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/main.o"36"2315AF09-64F0-4B8E-B8BB-9A23A7C04E62-
+oIn file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:7,
+o                 from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp:2:
+o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h:12:28: error: ofxXmlSettings.h: No such file or directory
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp8eaf71ef3b5bb541^406914fb3b5bb541^-433"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:7,                 from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp:2:/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h:12:28: error: ofxXmlSettings.h: No such file or directory1(21%IDEActivityLogMessage2@43"OfxXmlSettings.h: No such file or directory-358300656#253#180#3(36%IDEActivityLogHeaderInclusionMessage3@122"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp-358300656#18446744073709551615#0#-0#-23%DVTTextDocumentLocation4@118"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/main.cpp0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#---3@123"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h-358300656#18446744073709551615#0#-0#-4@119"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.h0000000000000000^6#18446744073709551615#6#18446744073709551615#18446744073709551615#0#---2@168"OfxXmlSettings.h: No such file or directory in /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h-358300656#18446744073709551615#0#-0#-4@139"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#---2#-4@139"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#28"*: No such file or directory--0#0#0#-19%DVTDocumentLocation5@118"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/main.cpp0000000000000000^2542"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-82227D70F1DD098B.o src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/main.cpp" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-82227D70F1DD098B.o"36"82484354-AF4C-4499-AA52-72E7CCD04112-
+
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/main-FF26E1E8FC87E188.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
 
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxCvColorImage.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 r0
@@ -2433,45 +2700,45 @@ r0
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxCvShortImage.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 r0
 
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxGameCamera.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxKinect.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/src/ofxKinect.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 r0
 
-CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c" normal i386 c com.apple.compilers.llvmgcc42
-s356925275.032628
-e356925275.540447
-r1
-xCompileC
-xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o
-x/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvmgcc42
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c6c76085b3f46b541^dd60905b3f46b541^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c0000000000000000^2560"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o ../../../addons/ofxKinect/libs/libfreenect/registration.c normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o"36"B0725F57-D967-47F2-85DE-F2417FB4278F-
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscBundle.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscBundle.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
 
-CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-s356925276.618546
-e356925279.124713
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscMessage.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscMessage.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscReceiver.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscReceiver.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/ofxOscSender.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxOsc/src/ofxOscSender.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/registration.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/registration.c" normal i386 c com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-77A841132DFFF189.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/example/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+s358300655.873604
+e358300667.141227
 r0
 xCompileC
-xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp.o
+xbuild/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o
 x/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvmgcc42
-oIn file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:1:
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:5:34: error: ofxHeadPoseEstimator.h: No such file or directory
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:5: error: 'cv' is not a namespace-name
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:5: error: expected namespace-name before ';' token
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp: In member function 'void testApp::calcAvgFPS()':
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:108: error: 'avgkFPS' was not declared in this scope
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:112: error: 'kFPS' was not declared in this scope
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp: In member function 'void testApp::drawReport()':
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:125: error: 'avgkFPS' was not declared in this scope
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':
-o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:212: error: 'kTilt' was not declared in this scope
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp2a8f9e5c3f46b541^c6f91f5f3f46b541^-1688"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:1:/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:5:34: error: ofxHeadPoseEstimator.h: No such file or directory/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:5: error: 'cv' is not a namespace-name/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:5: error: expected namespace-name before ';' token/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp: In member function 'void testApp::calcAvgFPS()':/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:108: error: 'avgkFPS' was not declared in this scope/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:112: error: 'kFPS' was not declared in this scope/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp: In member function 'void testApp::drawReport()':/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:125: error: 'avgkFPS' was not declared in this scope/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:212: error: 'kTilt' was not declared in this scope7(21%IDEActivityLogMessage2@49"OfxHeadPoseEstimator.h: No such file or directory-356925277#129#165#2(36%IDEActivityLogHeaderInclusionMessage3@125"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp-356925277#18446744073709551615#0#-0#-23%DVTTextDocumentLocation4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---2@154"OfxHeadPoseEstimator.h: No such file or directory in /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h-356925277#18446744073709551615#0#-0#-4@119"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#---2#-4@119"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.h0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#28"*: No such file or directory--2@28"'cv' is not a namespace-name-356925278#294#143#-2#-4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#18"LLVM GCC 4.2 Error--2@40"Expected namespace-name before ';' token-356925278#437#155#-2#-4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^4#18446744073709551615#4#18446744073709551615#18446744073709551615#0#19"Expected * before *--2@40"'avgkFPS' was not declared in this scope-356925278#746#157#-2#-4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^107#18446744073709551615#107#18446744073709551615#18446744073709551615#0#34"'*' was not declared in this scope--2@37"'kFPS' was not declared in this scope-356925278#903#154#-2#-4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^111#18446744073709551615#111#18446744073709551615#18446744073709551615#0#34"'*' was not declared in this scope--2@40"'avgkFPS' was not declared in this scope-356925278#1211#157#-2#-4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^124#18446744073709551615#124#18446744073709551615#18446744073709551615#0#34"'*' was not declared in this scope--2@38"'kTilt' was not declared in this scope-356925278#1533#155#-2#-4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^211#18446744073709551615#211#18446744073709551615#18446744073709551615#0#34"'*' was not declared in this scope--0#0#0#-19%DVTDocumentLocation5@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^2520"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp.o"36"96A7F4A4-B024-4DF3-8932-C0A4D375AC55-
+oIn file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:7,
+o                 from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:1:
+o/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h:12:28: error: ofxXmlSettings.h: No such file or directory
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp630ae2ef3b5bb541^44df49fb3b5bb541^-436"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h:7,                 from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp:1:/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h:12:28: error: ofxXmlSettings.h: No such file or directory1(21%IDEActivityLogMessage2@43"OfxXmlSettings.h: No such file or directory-358300657#256#180#3(36%IDEActivityLogHeaderInclusionMessage3@125"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp-358300657#18446744073709551615#0#-0#-23%DVTTextDocumentLocation4@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^0#18446744073709551615#0#18446744073709551615#18446744073709551615#0#---3@123"In file included from /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.h-358300657#18446744073709551615#0#-0#-4@119"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.h0000000000000000^6#18446744073709551615#6#18446744073709551615#18446744073709551615#0#---2@168"OfxXmlSettings.h: No such file or directory in /Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h-358300657#18446744073709551615#0#-0#-4@139"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#---2#-4@139"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/ofxGameCamera/src/ofxGameCamera.h0000000000000000^11#18446744073709551615#11#18446744073709551615#18446744073709551615#0#28"*: No such file or directory--0#0#0#-19%DVTDocumentLocation5@121"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/src/testApp.cpp0000000000000000^2554"CompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h -c "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/src/testApp.cpp" -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/Objects-normal/i386/testApp-FAA3DC9B2355198C.o"36"C3AB357D-0013-4787-BC3C-73696215E4D9-
 
 CCompileC build/reTime.build/Debug/reTime.build/Objects-normal/i386/tilt.o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../addons/ofxKinect/libs/libfreenect/tilt.c" normal i386 c com.apple.compilers.llvmgcc42
 r0
@@ -2489,20 +2756,20 @@ CPhaseScriptExecution "Run Script" "/Users/Justin/Documents/coding/of_preRelease
 r0
 
 CProcessInfoPlistFile "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/Info.plist" openFrameworks-Info.plist
-s356925270.242443
-e356925270.252567
+s358300650.952175
+e358300650.970065
 r1
 xProcessInfoPlistFile
 x/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/Info.plist
 xopenFrameworks-Info.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process openFrameworks-Info.plistb03a3e563f46b541^0caf40563f46b541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/openFrameworks-Info.plist0000000000000000^549"ProcessInfoPlistFile bin/reTimeDebug.app/Contents/Info.plist openFrameworks-Info.plist    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/Info.plist"36"77B7F1C4-48C2-4B9B-BAC4-04810886EB75-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process openFrameworks-Info.plist2ee2f3ea3b5bb541^7d40f8ea3b5bb541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial%20Media/TimeMachine/example/openFrameworks-Info.plist0000000000000000^549"ProcessInfoPlistFile bin/reTimeDebug.app/Contents/Info.plist openFrameworks-Info.plist    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app/Contents/Info.plist"36"CFCABF4A-3BBC-4DA9-9F0C-44A683773CCF-
 
 CProcessPCH /Users/Justin/Library/Developer/Xcode/DerivedData/reTime-gqarpnltmwpugndulzccupngkwsj/Index/PrecompiledHeaders/Carbon-ftcawnzmuuckgfhdwdyrihteyijd_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvmgcc42
-s356925270.281471
-e356925275.031210
+s358300650.975315
+e358300654.214947
 r1
 xProcessPCH
 x/var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch
@@ -2511,14 +2778,14 @@ xnormal
 xi386
 xc
 xcom.apple.compilers.llvmgcc42
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h0a2c48563f46b541^f73f085b3f46b541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h0000000000000000^2391"ProcessPCH /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch36"139DACD8-E00B-421C-B09E-E96020ACBE88-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.hf7cdf9ea3b5bb541^df1b37ee3b5bb541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h0000000000000000^2391"ProcessPCH /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-gdygpijsjwvzpkbqgfsdkekaucjk/Carbon.h.gch36"7E2C8781-7132-4E8D-A410-A4B8D4E9FE42-
 
 CProcessPCH++ /Users/Justin/Library/Developer/Xcode/DerivedData/reTime-gqarpnltmwpugndulzccupngkwsj/Index/PrecompiledHeaders/Carbon-hgdjseamxugcwpbdezkgropzqogf_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH++ /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42
-s356925270.281156
-e356925276.459523
+s358300650.974468
+e358300655.341554
 r1
 xProcessPCH++
 x/var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch
@@ -2528,7 +2795,7 @@ xi386
 xc++
 xcom.apple.compilers.llvmgcc42
 oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h591648563f46b541^8ae57a5c3f46b541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h0000000000000000^2447"ProcessPCH++ /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch36"1DAAE318-EE09-45B2-B4E5-561524F9C04E-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.hd4d1f9ea3b5bb541^498357ef3b5bb541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h0000000000000000^2447"ProcessPCH++ /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/reTimeDebug.hmap" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources/i386" "-I/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/build/reTime.build/Debug/reTime.build/DerivedSources" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin" "-F/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/nK/nK6FraxpHIKLfMwNA-TPI++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-duddubvbbqbbxkapohlnddfqpzkw/Carbon.h.gch36"EAA20CE6-131F-4A47-8E93-2B4E23968C46-
 
 CTouch "/Users/Justin/Documents/coding/of_preRelease_v007_osx/Spatial Media/TimeMachine/example/bin/reTimeDebug.app"
 r0

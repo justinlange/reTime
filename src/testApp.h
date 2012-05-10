@@ -4,6 +4,9 @@
 #include "ofxKinect.h"
 #include "MeshMaker.h"
 #include "ofxOsc.h"
+#include "ofxGameCamera.h"
+
+
 
 //OSC
 #define PORT 12345
@@ -11,7 +14,6 @@
 #define NUM_MSG_STRINGS 20
 
 
-//#include "ofxGrabCam.h"
 
 
 class testApp : public ofBaseApp{
@@ -36,8 +38,9 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		//-----------------------
 		ofxKinect kinect;
-		ofEasyCam easyCam;
         MeshMaker* myMesh;
+        ofxGameCamera cam;
+
     
         //-------OSC stuff----------------
 

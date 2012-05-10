@@ -131,10 +131,14 @@ void testApp::draw(){
     
     drawReport(); 
 ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
+    
+    
+    cam.setVariables(wiiX, wiiY, wiiZ, razorYaw, razorPitch, razorRoll );
+    cam.begin();
 
 //ofViewport(0, ofGetWindowHeight(), ofGetWindowWidth(), ofGetWindowHeight());  
     myMesh->updateMesh(frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);
-    
+    cam.end();
     
     
 //ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
@@ -157,7 +161,7 @@ ofTranslate(fullWindowWidth/2,fullWindowHeight/2);
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
     
-    myMesh->timeControl();
+//    myMesh->timeControl();
 
     
     switch (key) {
@@ -165,10 +169,10 @@ void testApp::keyPressed(int key){
         case OF_KEY_DOWN: kTilt -= 1; if (kTilt < -30) kTilt = -30; kinect.setCameraTiltAngle(kTilt); break;
         
             
-        case 'w': razorPitch+=5; break;
-        case 's': razorPitch-=5; break;
         case 'q': razorYaw+=5; break;
         case 'a': razorYaw-=5; break;
+        case 'w': razorPitch+=5; break;
+        case 's': razorPitch-=5; break;
         case 'e': razorRoll+=5; break;
         case 'd': razorRoll-=5; break;
         case 'r': wiiX+=50; break;
@@ -185,15 +189,17 @@ void testApp::keyPressed(int key){
         case '6': if(fWiiZ>0) fWiiZ-=.01; break;
         case 'u': smoothPZ+=50; break;
         case 'j': smoothPZ-=50; break;
+            
+          
         case 'o': frameCounter++; break;
         case 'l': frameCounter = 0; break;
+        case '0': razorYaw=0;razorPitch=0;razorRoll=0;wiiX=0;wiiY=0;wiiZ=0; break;
 
 
 
 
     }
-    
-
+  
 }
 
 //--------------------------------------------------------------
