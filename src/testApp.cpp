@@ -11,6 +11,7 @@ using namespace std;
 #define FPS_MEAN 30
 
 
+bool mode3D = true;
 
 int kTilt = 0;
 
@@ -35,6 +36,7 @@ int diffX;
 int diffY;
 int eyeDistance = 7; //change later to 7.5
 int transZ;
+int wiiMap = 600;
 
 
 ostringstream controlString;     
@@ -89,7 +91,7 @@ void testApp::setup(){
     kinect.init();
     kinect.open();
     
-    kinect.setDepthClipping(50, 8000);
+    kinect.setDepthClipping(800, 4000);
 
 
     
@@ -106,21 +108,21 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
   
-//    updateOsc();
+    updateOsc();
 //    updateOsc2();
     
-        kinect.update();
-        if (kinect.isFrameNew()) {
-            myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
-            }
-        
+//        kinect.update();
+//        if (kinect.isFrameNew()) {
+//            myMesh->recordTime( &kinect ) ;   //& gets the pointer for the object           
+//            }
+//        
     
 }
 
 //--------------------------------------------------------------
 void testApp::drawReport() {
     ostringstream controlString;
-    controlString << "razorPitch(q-a) " << razorPitch << "razorYaw (w-s) " << razorYaw << "razorRoll(e-d) "<< razorRoll << "\n" << "wiiX(r-f) " << wiiX << "wiiY(t-g)" << wiiY;    
+    controlString << "razorPitch(q-a) " << razorPitch << "razorYaw (w-s) " << razorYaw << "razorRoll(e-d) "<< razorRoll << "\n" << "wiiX(r-f) " << wiiX << "wiiY(t-g)" << wiiY << "\n" << "wiiMap(7-8): " << wiiMap;    
     controlStringToShow = controlString.str(); 
     ofDrawBitmapString(ofToString(controlStringToShow), 10,10);
 }
@@ -129,26 +131,23 @@ void testApp::draw(){
     
     ofBackground(0);
     
-    drawReport(); 
-ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
-    
-    
-    cam.setVariables(wiiX, wiiY, wiiZ, razorYaw, razorPitch, razorRoll );
-    cam.begin();
+    if (mode3D == false) {
+        drawReport(); 
+    }
 
-//ofViewport(0, ofGetWindowHeight(), ofGetWindowWidth(), ofGetWindowHeight());  
-    myMesh->updateMesh(frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);
-    cam.end();
-    
-    
-//ofViewport(0, ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2);  
-//    myMesh->updateMesh(frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);
-//
-//ofViewport(0, 0, ofGetWindowWidth(), ofGetWindowHeight()/2); 
-//    myMesh->updateMesh(frameCounter, smoothPZ, razorYaw+eyeDistance, razorPitch, razorRoll, wiiX, wiiY, wiiZ);
-    
-  
-
+    if (mode3D == false) {
+        ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
+        cam.setVariables(wiiX, wiiY, wiiZ, razorYaw, razorPitch, -razorRoll );
+        cam.begin();
+        ofTranslate(0,0,-1000);
+        ofRotateX(-90);
+        myMesh->updateMesh(mode3D, frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);  
+        cam.end(); 
+        
+    } else {
+        ofTranslate(fullWindowWidth/2,fullWindowHeight/2); 
+            myMesh->updateMesh(mode3D, frameCounter, smoothPZ, razorYaw, razorPitch, razorRoll, wiiX, wiiY, wiiZ, fWiiX, fWiiY, fWiiZ);  
+    }
 
    
 ////    ofScale(1,1,sqrt(float(ofGetWindowWidth()/2)/mouseX));
@@ -161,7 +160,7 @@ ofTranslate(fullWindowWidth/2,fullWindowHeight/2);
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
     
-//    myMesh->timeControl();
+    myMesh->timeControl();
 
     
     switch (key) {
@@ -187,10 +186,10 @@ void testApp::keyPressed(int key){
         case '4': if(fWiiY>0) fWiiY-=.01; break;
         case '5': if(fWiiZ<1) fWiiZ+=.01; break;
         case '6': if(fWiiZ>0) fWiiZ-=.01; break;
+        case '7': wiiMap+=50; break;
+        case '8': wiiMap-=50; break;
         case 'u': smoothPZ+=50; break;
-        case 'j': smoothPZ-=50; break;
-            
-          
+        case 'j': smoothPZ-=50; break;          
         case 'o': frameCounter++; break;
         case 'l': frameCounter = 0; break;
         case '0': razorYaw=0;razorPitch=0;razorRoll=0;wiiX=0;wiiY=0;wiiZ=0; break;
@@ -254,10 +253,15 @@ void testApp::updateOsc2(){
 //            printf("the address is good for 1\n");
 
 		}
+        else if (b.getAddress() == "/wii/1/ir/xys/1/2" ){
+            fWiiZ = b.getArgAsFloat( 0 ) ;
+
+        }
 	}
     
-//    wiiX = ofMap(fWiiX, 0, 1, -1000, 1000);
-//    wiiY = ofMap(fWiiY, 0, 1, -1000, 1000);
+    wiiX = ofMap(fWiiX, 0, 1, -wiiMap, wiiMap);
+    wiiY = ofMap(fWiiY, 0, 1, wiiMap, -wiiMap);
+    wiiZ = ofMap(fWiiZ, 0, 1, -wiiMap/2, wiiMap/2);
 
     
     

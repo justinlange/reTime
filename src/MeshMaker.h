@@ -2,10 +2,8 @@
 
 //#include "ofMain.h"
 #include "ofxKinect.h"
+#include "ofxGameCamera.h"
 //#include "time.h"
-
-//1 for recording new frames, 0 for not 
-#define RECORDTIMEFRAMES 0
 
     
 class MeshMaker {    
@@ -15,20 +13,20 @@ public:
     MeshMaker();
     
     void recordTime( ofxKinect* kinect );
-    void updateMesh( int _frameCounter, int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int _wiiY, int _wiiZ, float _fWiiX, float _fWiiY, float _fWiiZ );
+    void updateMesh( bool _mode3D, int _frameCounter, int _smoothPZ, int _razorYaw, int _razorPitch, int _razorRoll, int _wiiX, int _wiiY, int _wiiZ, float _fWiiX, float _fWiiY, float _fWiiZ );
     void setupMesh();
     void exit();
     void timeControl();
+    void gridMaker();
     
-
-	
-//    ofxKinect *kinect;
     ofImage presentImg;
     ofImage pastImg;
-    ofMesh mesh;  
+    ofMesh mesh; 
+    ofxGameCamera cam;
+
+    bool mode3D;
 
 
-    
     //---------variables to pass in to control the mesh---
     
     int initialZtranslation;
@@ -41,11 +39,6 @@ public:
     int wiiZ;
     
     float fWiiX, fWiiY, fWiiZ;
-    
-//    int smoothDiffX;
-//    int smoothDiffY;
-//    int transZ;
-    
     
     int lastTime;
     int recordInterval;
@@ -62,6 +55,7 @@ public:
     
     //---------showing the present or past-----------
     
+    bool showGrid;
     int frameCounter;    
     int timeOffsetFrames;
     int frameToShow;
@@ -75,7 +69,11 @@ public:
     int startX;
     int endBufferY;
     int endBufferX;
-
-
+    int recordIntervalChange;
+    
+    //------demoModes---------------
+    bool playbackMode;
+    bool liveRecordMode;
+    bool stepThroughMode;
 
 };
